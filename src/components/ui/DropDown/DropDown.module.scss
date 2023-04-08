@@ -1,0 +1,38 @@
+.title {
+  background-color: #222222;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & .arrow.rotate {
+    transform: rotate(180deg);
+  }
+}
+
+.text {
+  font-style: italic;
+  max-height: 0px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #767676;
+  opacity: 0.6;
+  background-color: #222222;
+  // padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.9s ease-out;
+  & div {
+    padding: 20px;
+  }
+}
+.text.open {
+  transition: max-height 1.2s ease-out;
+  max-height: 300px;
+}

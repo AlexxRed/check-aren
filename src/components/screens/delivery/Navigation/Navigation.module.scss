@@ -1,0 +1,31 @@
+/* ---- Navigation ---- */
+@import '@/styles/resources';
+
+.wrapper {
+        // need fix
+    color: $black-them-gray;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    @include transition();
+    display: flex;
+    margin-bottom: rem(50);
+
+
+}
+
+.text {
+    display: block;
+    
+    &:hover {
+        color: $accent;
+    }
+
+    &.active {
+        color: $white;
+    }
+
+    @include mq($tablet) {
+        font-size: 18px;
+    }
+}

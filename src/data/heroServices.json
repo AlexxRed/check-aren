@@ -1,0 +1,14 @@
+{
+    "section": {
+        "title": "Forget about the long gatherings in the service station! Get a quote within an hour after the diagnosis",
+        "id": "hero"
+    },
+    "description": "Parts directly from the manufacturer at the best price. We also offer a full range of used spare parts for all machines",
+    "button": {
+        "text": "Book an appointment"
+    },
+    "image": {
+        "url": "/img/pages/home/hero.jpg",
+        "alt": "car"
+    }
+}

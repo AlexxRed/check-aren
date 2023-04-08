@@ -1,0 +1,67 @@
+@import '@/styles/resources';
+.faq {
+  display: flex;
+  background-color: #1b1b1b;
+  max-width: 1262px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  padding-bottom: 150px;
+  & .content {
+    padding-right: 30px;
+    flex: 0 0 42.68%;
+    & .title {
+      margin-bottom: 20px;
+      font-weight: 400;
+      @include adaptiv-font(28, 22);
+      color: #ffffff;
+    }
+    & .text {
+      font-weight: 400;
+      @include adaptiv-font(22, 16);
+      color: #767676;
+      margin-bottom: 50px;
+    }
+    & .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & button {
+        font-style: italic;
+        font-weight: 500;
+        @include adaptiv-font(20, 18);
+        background-color: inherit;
+        padding: 16px 40px;
+        color: #ffffff;
+        border: 1.5px solid #5cb94c;
+        border-radius: 10px;
+        @include transition();
+        &:hover {
+          background-color: $hover;
+        }
+      }
+    }
+  }
+  & .drops {
+    flex: 1 1 auto;
+  }
+  @media (max-width: 800px) {
+    & {
+      flex-direction: column;
+      & .content {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        & .title {
+          text-align: center;
+        }
+        & .text {
+          text-align: center;
+        }
+        & .button {
+          margin-bottom: 32px;
+        }
+      }
+    }
+  }
+}

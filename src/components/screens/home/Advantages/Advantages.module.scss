@@ -1,0 +1,46 @@
+/* ---- Advantages ---- */
+@import '@/styles/resources';
+
+.section {
+    font-family: 'Jost', sans-serif;
+    padding: 0;
+
+    @include mq($tablet) {
+        padding: 40px 0;
+    }
+
+    @include mq($phone) {
+        padding: 25px 0;
+    }
+}
+
+.list {
+    @include flexible();
+    justify-content: space-around;
+
+    @include mq($phone) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+}
+
+.item {
+    text-align: left;
+    margin-right: rem(30);
+}
+
+.title {
+    @include adaptiv-font(24, 14);
+    color: $white;
+    // @include font-size(24px);
+    font-weight: 400;
+}
+
+.description {
+    @include adaptiv-font(20, 12);
+    margin-top: 10px;
+
+}

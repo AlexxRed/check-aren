@@ -1,0 +1,120 @@
+/* ---- ProductCard ---- */
+@import '@/styles/resources';
+
+.item {
+    @include transition();
+    box-sizing: border-box;
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--background-color-gray-black-theme);
+    border: solid 1.5px transparent;
+    border-radius: 10px;
+    padding: 30px;
+
+    @include mq($desktop) {
+        max-width: 285px;
+    }
+
+    @include mq($tablet) {
+        max-width: 369px;
+    }
+
+    &:hover {
+        border: solid 1.5px $accent;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+
+    @include mq($desktop) {
+        max-width: 225px;
+    }
+
+    @include mq($tablet) {
+        max-width: 310px;
+    }
+}
+
+.image_wrapper{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image {
+    position: relative;
+    height: auto;
+    object-fit: cover;
+    height: rem(225);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    max-width: 309px;
+
+    @include mq($tablet) {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    &:hover{
+        transform: scale(1.5);
+    }
+
+}
+.title {
+    @include mq($desktop) {
+        max-width: 225px;
+    }
+    @include mq($tablet) {
+        max-width: 310px;
+    }
+
+    @include adaptiv-font(18, 10);
+    color: $white;
+
+}
+
+.price {
+    font-size: 16px;
+    color: $accent;
+    margin-top: 10px;
+}
+
+.button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background-color: var(--background-color-gray-black-theme);
+    min-width: 100%;
+    border-radius: 10px;
+    border: solid 1.5px $accent;
+    color: $white;
+
+        &:hover {
+            background-color: $hover;
+        }
+}
+
+
+.icon {
+    display: flex;
+    align-self: flex-end;
+    margin: auto auto;
+    border-left: solid 1.5px $accent;
+    padding: 10px;
+    width: 34px;
+    height: auto;
+}
+.add{
+    margin-left: auto;
+    margin-right: auto;
+}
+.flag{
+    max-width: 20%;
+}

@@ -1,0 +1,36 @@
+/* ---- Logo ---- */
+@import '@/styles/resources';
+
+.wrapper {
+    @include transition();
+    display: flex;
+
+    &:hover {
+        @include link-hover();
+    }
+    @media (max-width: 480px) { 
+        margin-left: 120px;
+    }
+    @media(min-width: 420px) and (max-width: 480px) { 
+        margin-left: 20px;
+    }
+}
+
+.title {
+    display: block;
+    @include font-size(24px);
+    font-weight: 400;
+    color: $accent;
+
+    @include mq($phone) {
+        @include font-size(24px);
+    }
+}
+
+.description {
+    display: block;
+    padding-left: 1ch;
+    @include font-size(24px);
+    font-weight: 400;
+    color: $white;
+}

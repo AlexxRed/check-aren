@@ -1,0 +1,31 @@
+/* ---- Arrows ---- */
+@import '@/styles/resources';
+
+.box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: rem(142);
+    max-height: rem(56);
+}
+
+.wrapper{
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+    border: solid 1.5px $accent;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: $hover;
+    }
+
+}
+
+.icon {
+    display: block;
+    fill: $white;
+    width: 32px;
+    height: 32px;
+}

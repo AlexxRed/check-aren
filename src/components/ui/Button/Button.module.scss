@@ -1,0 +1,66 @@
+/* ---- Button ---- */
+@import '@/styles/resources';
+
+.default {
+    @include transition();
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+
+    &:hover,
+    &:active {
+        @include transition();
+    }
+}
+
+.theme {
+    width: 100%;
+    background: transparent;
+    color: $white;
+    // padding: 13px 0;
+
+    &:hover {
+        background: $hover;
+        color: $white;
+    }
+
+    &:active {
+        background: $active;
+        color: $white;
+    }
+}
+
+// .theme_ghost {
+//     background: none;
+//     color: $theme-color;
+//     padding: 10px 0;
+//     border: 2px solid $theme-color;
+
+//     &:hover {
+//         background: $theme-color;
+//         color: $theme-ghost-btn-color-hover;
+//     }
+
+//     &:active {
+//         background: $theme-ghost-btn-bg-active;
+//         border-color: $theme-ghost-btn-bg-active;
+//         color: $theme-color;
+//     }
+// }
+
+// .white_ghost {
+//     background: none;
+//     color: $white-1;
+//     padding: 14px 0;
+//     border: 2px solid $white-1;
+
+//     &:hover {
+//         background: $white-1;
+//         color: $theme-color;
+//     }
+
+//     &:active {
+//         background: #ccc;
+//         border-color: #ccc;
+//     }
+// }

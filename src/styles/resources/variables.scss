@@ -1,0 +1,63 @@
+/* ---- Variables ---- */
+
+/* -- Colors -- */
+$accent: #5CB94C;
+$hover: rgba(92, 185, 76, 1);
+$active: rgba(92, 185, 76, 1);
+$red: #D13333;
+$white: #fff;
+$gray-input: #ECECEC;
+
+// temp color need fix
+$background-black: rgba(27, 27, 27, 1);
+$black-them-gray: rgb(118, 118, 118);
+
+
+/* -- Buttons -- */
+$black-theme-btn-bg-hover: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #5CB94C;;
+$black-theme-btn-bg-active: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #5CB94C;;
+
+
+/* -- Typography -- */
+$font-family-primary: 'Inter', sans-serif;
+$font-weight: 400;
+
+$font-family-title: 'Russo One', sans-serif;
+$font-weight: 400;
+
+$h1-font-size: 54px;
+$h2-font-size: 40px;
+$h3-font-size: 24px;
+$h4-font-size: 18px;
+
+/* -- Transition -- */
+$transition-property: all;
+$transition-delay: 0.2s;
+$transition-timing: ease; 
+
+/* -- Link -- */
+$link-hover-opacity: 0.2;
+
+/* -- Media Query Breakpoints -- */
+$phone: 428;
+$tablet: 834;
+$desktop: 1440;
+$maxWidth: 1440;
+
+/* -- Container -- */
+$container-default-width: 1230px;
+$container-desktop-gutter: 30;
+$container-laptop-gutter: 32;
+$container-phone-gutter: 24;
+
+/* -- Container-width -- */
+$container-max-width: 1230px; // максимальна ширина контейнера
+$container-padding: 30px;
+
+/* -- Gutters -- */
+$header-padding-desktop-gutter: 25px;
+$header-padding-tablet-large-gutter: 15px;
+$header-padding-tablet-gutter: 15px;
+$header-padding-phablet-gutter: 15px;
+
+$section-gutter: 100px + $header-padding-tablet-gutter * 2;

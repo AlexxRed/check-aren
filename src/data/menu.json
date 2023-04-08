@@ -1,0 +1,34 @@
+{
+    "header": [
+        {
+            "text": "About us",
+            "href": "#about-us",
+            "type": "anchor"
+        },
+        {
+            "text": "Tires",
+            "href": "#tires",
+            "type": "anchor"
+        },
+        {
+            "text": "Discs",
+            "href": "/discs",
+            "type": "link"
+        },
+        {
+            "text": "Reviews",
+            "href": "#reviews",
+            "type": "anchor"
+        },
+        {
+            "text": "Our services",
+            "href": "/services",
+            "type": "link"
+        },
+        {
+            "text": "FAQ",
+            "href": "#faq",
+            "type": "anchor"
+        }
+    ]
+}

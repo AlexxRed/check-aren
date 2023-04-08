@@ -1,0 +1,164 @@
+/* ---- HelpForm ---- */
+@import '@/styles/resources';
+
+.section {
+    color: $white;
+    background: var(--background-color-gray-black-theme);
+    padding-bottom: 0px;
+    margin-bottom: 100px;
+
+    // @include mq($tablet) {
+    //     padding: 40px 0;
+    // }
+
+    @include mq($tablet) {
+        display: flex;
+        padding: 0 0;
+    }
+}
+
+.title {
+    @include adaptiv-font(28, 20);
+    color: $white;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    @include flexible();
+    justify-content: space-between;
+
+    @include mq($tablet) {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-basis: 60%;
+    width: 100%;
+
+    @include mq($tablet) {
+        width: 100%;
+        flex-basis: 46%;
+    }
+
+    // @include mq($tablet) {
+    //     width: 100%;
+    // }
+}
+.input_container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    @include mq($tablet) {
+        flex-direction: column;
+    }
+}
+
+.thumb{
+    text-align: center;
+    height: rem(430);
+    background-color: $accent;
+    width: 13%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: rem(100);
+
+    @include mq($tablet) {
+        margin-left: 0px;
+        height: 100px;
+        width: 100%;
+        margin-bottom: 150px;
+    }
+}
+
+.image {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    max-width: rem(180%);
+    height: auto;
+
+    @include mq($tablet) {
+        max-width: rem(180%);
+        height: auto;
+    }
+}
+
+.picture{
+    @include mq($tablet) {
+        max-width: rem(50%);
+        max-height: 50%;
+    }
+}
+
+
+.description {
+    @include adaptiv-font(22, 16);
+    margin-bottom: 30px;
+    color: var(--gray-black-theme);
+}
+
+.input_wrapper {
+    width: 100%;
+    margin-bottom: 5px;
+    &:not(:last-child) {
+        margin-right: 30px;
+
+        @include mq(1058) {
+            margin-right: 20px;
+        }
+
+        @include mq($tablet) {
+            margin-right: 0;
+        }
+    }
+}
+
+.input {
+    width: 100%;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: var(--background-input);
+
+    &:focus {
+        border-color: $accent;
+    }
+}
+
+.error {
+    @include fade(out);
+    color: $red;
+    font-weight: 500;
+}
+
+.button {
+    width: 100%;
+    margin-top: 3px;
+}
+
+.button_wrapper{
+    margin-right: auto;
+}
+
+.view {
+    cursor: pointer;
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    padding: 16px 40px;
+    background-color: $accent;
+    width: 100%;
+    border-radius: 10px;
+    color: $white;
+    margin-right: auto;
+
+        &:hover {
+            background-color: #2f911e;
+        }
+}

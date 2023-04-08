@@ -1,0 +1,114 @@
+@import '@/styles/resources';
+
+.about {
+  max-width: 1262px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  background-color: #1b1b1b;
+  color: #fff;
+  padding-bottom: 200px;
+
+  & .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    & .title {
+      font-weight: 400;
+      @include adaptiv-font(30, 22);
+      line-height: 36px;
+    }
+    & .button {
+      border: 1.5px solid #5cb94c;
+      border-radius: 10px;
+      padding: 16px 40px;
+      font-weight: 500;
+      font-size: 1.25rem;
+      background-color: inherit;
+      color: #fff;
+      @include transition();
+      &:hover {
+        background-color: $hover;
+      }
+    }
+  }
+  & .item {
+    display: flex;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    & .year {
+      padding: 0 50px;
+      text-shadow: #fff 0 0 2px;
+      color: #1b1b1b;
+      font-weight: 700;
+      font-size: 28px;
+      align-self: center;
+    }
+    & .image {
+      position: relative;
+      flex: 0 0 32%;
+      background-color: #767676;
+      border-radius: 10px 0px 0px 10px;
+      & .img {
+        height: 100%;
+      }
+      & .img__year {
+        display: inline-block;
+        position: absolute;
+        z-index: 3;
+        right: 20px;
+        bottom: 15px;
+        opacity: 0.4;
+        font-size: 1.75rem;
+      }
+    }
+    & .info {
+      flex: 1 1 auto;
+      padding: 30px;
+      background-color: #222222;
+      border-radius: 0px 10px 10px 0px;
+      & .caption {
+        margin-bottom: 20px;
+        font-size: 1.75rem;
+      }
+
+      & .text {
+        font-size: 1.375rem;
+        line-height: 27px;
+        color: #767676;
+      }
+    }
+  }
+
+  @media (max-width: 993px) {
+    & .item {
+      .info {
+        & .caption {
+          font-size: 1.5rem;
+        }
+        & .text {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  @media (max-width: 781px) {
+    & .item {
+      flex-direction: column;
+      & .image {
+        border-radius: 10px 10px 0px 0px;
+      }
+      & .info {
+        border-radius: 0px 0px 10px 10px;
+      }
+      & .year {
+        display: none;
+      }
+      & .image {
+        height: 380px;
+        flex: 1 1 auto;
+      }
+    }
+  }
+}

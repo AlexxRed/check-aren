@@ -1,0 +1,25 @@
+{
+    "icons": 
+    [
+        {
+            "text": "basket",
+            "url": "/favicons/main/ShoppingCart.svg",
+            "alt": "basket"
+        },
+        {
+            "text": "arrows",
+            "url": "/favicons/main/GitDiff.svg", 
+            "alt": "arrows"
+        },
+        {
+            "text": "user",
+            "url": "/favicons/main/User.svg",
+            "alt": "user"
+        },
+        {
+            "text": "menu",
+            "url": "/favicons/main/List.svg",
+            "alt": "menu"
+        }
+    ]
+}

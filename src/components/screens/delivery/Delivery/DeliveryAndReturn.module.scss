@@ -1,0 +1,25 @@
+/* ---- Delivery ---- */
+@import '@/styles/resources';
+
+.section {
+    @include mq($tablet) {
+        padding: 40px 0;
+    }
+
+    @include mq($phone) {
+        padding: 25px 0;
+    }
+}
+
+
+.title {
+    @include adaptiv-font(40, 22);
+    line-height: rem(48);
+    font-weight: 400;
+    color: $white;
+    margin-bottom: rem(15)
+}
+
+.text {
+    @include adaptiv-font(20, 14);
+}

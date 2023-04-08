@@ -1,0 +1,160 @@
+/* ---- Hero ---- */
+@import '@/styles/resources';
+
+.section {
+    color: $white;
+    padding-bottom: 0px;
+    margin-bottom: rem(100);
+
+
+    @include mq($tablet) {
+        display: flex;
+        padding: 0 0;
+    }
+}
+.box{
+    padding-top: rem(100);
+}
+
+.image_wrapper{
+    background: url('../../../../../public//img/pages/home/hero.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 80% rem(718); 
+    background-position: right rem(20); 
+    background-clip: content-box; 
+    width: 100%;
+    height: rem(718);
+
+    @include mq($tablet) {
+        max-width: rem(50%);
+        // height: rem(592);
+    }
+    @include mq($phone) {
+        // max-height: 559px;
+        // height: rem(559);
+    }
+}
+
+.title {
+    @include adaptiv-font(34, 22);
+    line-height: rem(45);
+    color: $white;
+    margin-right: auto;
+    margin-bottom: 20px;
+    max-width: rem(1000);
+
+    @include mq($tablet) {
+        max-width: 50%;
+        margin-bottom: rem(15);
+    }
+
+    @include mq($phone) {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 100%;
+        justify-content: center;
+        margin-bottom: rem(10);
+    }
+}
+
+.description {
+    display: block;
+    @include adaptiv-font(24, 16);
+    max-width: rem(600);
+    color: var(--gray-black-theme);
+    margin-bottom: rem(50);
+
+    @include mq($tablet) {
+        max-width: 50%;
+        margin-bottom: rem(15);
+    }
+
+    @include mq($phone) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 100%;
+        margin-bottom: rem(10);
+    }
+}
+
+.title_link {
+    color: $accent;
+}
+
+.wrapper {
+    position: relative;
+    @include flexible();
+    justify-content: center;
+
+    @include mq($tablet) {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    max-width: rem(705);
+    margin-bottom: rem(120);
+    margin-right: auto;
+
+    @include mq($tablet) {
+        margin-bottom: rem(60);
+    }
+
+    @include mq($phone) {
+        align-items: center;
+        justify-content: center;
+        margin-top: rem(15);
+        margin-bottom: rem(20);
+    }
+
+
+}
+
+.button_wrapper{
+    margin-right: auto;
+}
+
+.button {
+    cursor: pointer;
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    padding: 16px 40px;
+    background-color: $accent;
+    width: 100%;
+    border-radius: 10px;
+    color: $white;
+    margin-right: auto;
+
+        &:hover {
+            background-color: #2f911e;
+        }
+}
+
+.card {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    margin-right: rem(63);
+    margin-top: rem(10);
+    max-width: rem(401);
+
+
+    @media (min-width: 420px) and (max-width: 670px) { 
+        display: none;
+    }
+
+    @include mq($phone) {
+        display: none;
+    }
+}

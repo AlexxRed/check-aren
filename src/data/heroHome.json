@@ -1,0 +1,14 @@
+{
+    "section": {
+        "title": "Availability of tires and wheels for a wide range of vehicles and special equipment.",
+        "id": "hero"
+    },
+    "description": "If you do not find the goods in 10 minutes, then we make a 5% discount",
+    "button": {
+        "text": "Start 10-minutes timer"
+    },
+    "image": {
+        "url": "/img/pages/home/hero.jpg",
+        "alt": "car"
+    }
+}

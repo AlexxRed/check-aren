@@ -1,0 +1,44 @@
+{
+    "section": {
+        "title": "Why us?",
+        "id": "Why-us"
+        },
+        "list": [
+        {
+            "id": "1",
+            "image": "/favicons/whyus/timer.svg",
+            "title": "Time saving",
+            "description": "on changing tires - fast and convenient tire fitting for car owners"
+        },
+        {
+            "id": "2",
+            "image": "/favicons/whyus/dollar.svg",
+            "title": "Saving money",
+            "description": "because you only pay for what you and your car really need"        
+        },
+        {
+            "id": "3",
+            "image": "/favicons/whyus/medal.svg",
+            "title": "Solution",
+            "description": "the first time, and you do not need to go to the service 5 times"
+        },
+        {
+            "id": "4",
+            "image": "/favicons/whyus/file.svg",
+            "title": "You know",
+            "description": "what you pay money for and no one comes up with anything"
+        },
+        {
+            "id": "5",
+            "image": "/favicons/whyus/rocket.svg",
+            "title": "You use the best",
+            "description": "as we order everything from official representatives"
+        },
+        {
+            "id": "6",
+            "image": "/favicons/whyus/smile.svg",
+            "title": "You save your nerves",
+            "description": "and you don't have to worry about the little things"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+/* ---- Language ---- */
+@import '@/styles/resources';
+
+.wrapper {
+    cursor: pointer;
+    @include transition();
+    display: flex;
+    margin-left: 30px;
+
+    @media (min-width: 834px) and (max-width: 1150px) { 
+        margin-left: 10px;
+        margin-right: -10px;
+    }
+    @media (max-width: 690px) { 
+        display: none;
+    }
+
+    @include mq($tablet) {
+        margin-left: rem(10);
+    }
+
+    @include mq($phone) {
+        display: none;
+    }
+}
+
+.title {
+    font-weight: 500;
+
+}
+
+.description {
+    @include font-size(16px);
+    font-weight: 400;
+}
+
+.text {
+    @include adaptiv-font(18, 12);
+    line-height: 22px;
+    display: block;
+    
+    &:hover {
+        @include link-hover();
+    }
+
+    &.active {
+        color: $accent;
+    }
+
+    @include mq($tablet) {
+        font-size: 18px;
+    }
+}
+

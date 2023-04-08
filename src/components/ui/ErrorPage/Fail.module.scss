@@ -1,0 +1,37 @@
+/* ---- Fail ---- */
+@import '@/styles/resources';
+
+.section {
+    @include mq($tablet) {
+        padding: 40px 0;
+    }
+
+    @include mq($phone) {
+        padding: 25px 0;
+    }
+}
+
+.list {
+    background: url('../../../../public/img/pages/home/hero-car.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 100vh;
+    @include flexible();
+    justify-content: space-around;
+}
+
+
+.title {
+    @include adaptiv-font(40, 25);
+    color: $white;
+    font-weight: 400;
+    color: $accent;
+}
+
+.description {
+    @include adaptiv-font(36, 20);
+    color: $white;
+    margin-top: 10px;
+
+}

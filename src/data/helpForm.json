@@ -1,0 +1,14 @@
+{
+    "section": {
+        "title": "Not sure which tires and rims are right for your car?",
+        "id": "help"
+    },
+    "description": "We will help you choose the best option for you. Fill in all the data below and we will contact you within 10 minutes!",
+    "button": {
+        "text": "Help with selection"
+    },
+    "image": {
+        "url": "/img/pages/home/wheel.png",
+        "alt": "disk"
+    }
+}

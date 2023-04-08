@@ -1,0 +1,203 @@
+/* ---- Offer ---- */
+// @import '@resources';
+
+// .section {
+//     font-family: 'Inter', sans-serif;
+//     font-weight: 500;
+//     background-color: #1B1B1B;
+//     @include transition();
+//     @include adaptiv-font(18, 10);
+//     width: 100%;
+//     margin-bottom: rem(100);
+//     padding: $header-padding-desktop-gutter 0;
+
+//     @include mq($tablet) {
+//         padding: $header-padding-tablet-gutter 0;
+//     }
+
+//     @include mq($phone) {
+//         padding: $header-padding-phablet-gutter 0;
+//     }
+// }
+
+// .section_row {
+//     @include flexible();
+//     justify-content: space-between;
+
+//     @include mq($tablet) {
+//         justify-content: center;
+//     }
+// }
+
+// .title {
+//     @include font-size(30px);
+//     color:$white;
+// }
+
+// .title_container{
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     margin-bottom: 50px;
+// }
+
+
+// .list {
+//     @include font-size(14px);
+//     display: grid;
+//     grid-template-columns: repeat(4, 1fr);
+//     gap: 30px;
+//     margin-top: 30px;
+
+//     @include mq($tablet) {
+//         grid-template-columns: repeat(2, 1fr);
+//     }
+
+//     @include mq($tablet) {
+//         grid-template-columns: repeat(4, rem(235));
+//         overflow-x: scroll;
+
+//         &::-webkit-scrollbar {
+//             display: none;
+//         }
+//     }
+// }
+
+// .wrapper {
+//     display: flex;
+//     @include font-size(14px);
+//     display: grid;
+//     grid-template-columns: repeat(4, 1fr);
+//     gap: 30px;
+//     margin-top: 30px;
+
+//     @include mq($tablet) {
+//         grid-template-columns: repeat(2, 1fr);
+//     }
+
+//     @include mq($tablet) {
+//         grid-template-columns: repeat(4, rem(235));
+//         overflow-x: scroll;
+
+//         &::-webkit-scrollbar {
+//             display: none;
+//         }
+//     }
+// }
+
+// .arrows{
+//     display: flex;
+// }
+
+// .cards{
+//     margin-bottom: 50px;
+// }
+
+// .view {
+//     cursor: pointer;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     font-size: 18px;
+//     text-align: center;
+//     background-color: var(--background-color-gray-black-theme);
+//     width: 181px;
+//     height: 52px;
+//     border-radius: 10px;
+//     border: solid 1.5px $accent;
+//     color: $white;
+//     margin-left: auto;
+//     margin-right: auto;
+
+//         &:hover {
+//             background-color: $hover;
+//         }
+// }
+
+@import '@/styles/resources';
+
+.section {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    background-color: #1B1B1B;
+    @include transition();
+    @include adaptiv-font(18, 10);
+    margin-bottom: 100px;
+    padding: $header-padding-desktop-gutter 0;
+
+    @include mq($tablet) {
+        padding: $header-padding-tablet-gutter 0;
+    }
+
+    @include mq($phone) {
+        padding: $header-padding-phablet-gutter 0;
+    }
+}
+
+
+.title {
+    @include font-size(30px);
+    font-weight: 400;
+    color:$white;
+}
+
+.title_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+
+// .wrapper {
+//     @include font-size(14px);
+//     display: grid;
+//     grid-template-columns: repeat(4, 1fr);
+//     gap: 30px;
+//     margin-top: 30px;
+
+//     @include mq($tablet) {
+//         grid-template-columns: repeat(2, 1fr);
+//     }
+// }
+
+.arrows{
+    display: flex;
+}
+
+.cards{
+    margin-bottom: 50px;
+}
+
+.view {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+    background-color: var(--background-color-gray-black-theme);
+    width: 181px;
+    height: 52px;
+    border-radius: 10px;
+    border: solid 1.5px $accent;
+    color: $white;
+    margin-left: auto;
+    margin-right: auto;
+
+        &:hover {
+            background-color: $hover;
+        }
+}
+
+.slide {
+    width: 285px;
+
+    @include mq($desktop) {
+        max-width: 285px;
+    }
+
+    @include mq($tablet) {
+        max-width: 369px;
+    }
+}

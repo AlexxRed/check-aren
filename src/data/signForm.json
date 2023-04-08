@@ -1,0 +1,14 @@
+{
+    "section": {
+        "title": "Do you want to make your car stylish and unique? We know how to do it!",
+        "id": "help"
+    },
+    "description": "Our team of experts will help you realise your bold ideas and stand out from the crowd",
+    "button": {
+        "text": "Sign in now!"
+    },
+    "image": {
+        "url": "/img/pages/home/wheel.png",
+        "alt": "disk"
+    }
+}

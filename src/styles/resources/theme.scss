@@ -1,0 +1,24 @@
+// :root[class="black"]{
+//     --bc:blue;
+//     }
+//     [class="white"]{
+//     --bc:black;
+// }
+
+:root {
+    // Dark Theme Colors
+    --black-black-theme: #1B1B1B;
+    --gray-black-theme: #767676;
+    --green-black-theme-1: #038342;
+    --green-black-theme-2: #5CB94C;
+    --background-color-gray-black-theme: #222222;
+    --background-input:#2D2D2D;
+    --tab-black-theme: rgba(92, 185, 76, 0.3);
+
+    //Light Theme Colors
+    --green-white-theme: #5CB94C;
+    --black-white-theme: #222222;
+    --gray-white-theme: #767676;
+    --gray-white-theme-2: #F5F5F5;
+    --background-color-gray-white-theme: rgba(118, 118, 118, 0.4);
+}

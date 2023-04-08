@@ -1,0 +1,15 @@
+{
+    "theme": 
+    [
+        {
+            "text": "black",
+            "url": "/favicons/theme/moon mode=off.svg",
+            "alt": "sun"
+        },
+        {
+            "text": "white",
+            "url": "/favicons/theme/moon mode=on.svg",
+            "alt": "moon"
+        }
+    ]
+}

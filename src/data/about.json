@@ -1,0 +1,43 @@
+{
+  "section": {
+    "title": "About company iformation",
+    "id": "about-company-iformation"
+  },
+  "list": [
+    {
+      "id": "1",
+      "year": "1998",
+      "imgUrl": "",
+      "title": "Beginning",
+      "description": "About 25 years ago, my brother, a few friends and I started our own car dealership business. We were importing cars from Germany, preparing them for sale and selling them on the local market. This business was not only profitable, but we had another passionate interest in changing the look of the machines. Our cars have always stood out for their individuality."
+    },
+    {
+      "id": "2",
+      "year": "2000",
+      "imgUrl": "",
+      "title": "Leaving for design",
+      "description": "Thanks to our work, the cars have always looked perfect - beautiful colors, beautiful wheels and good technical condition. We believed that choosing the right wheel design is one of the key elements of our success."
+    },
+    {
+      "id": "3",
+      "year": "2007",
+      "imgUrl": "",
+      "title": "Crisis in business",
+      "description": "However, in 7-8 years the business faced a crisis. We were forced to switch to another activity. At this point, we decided to do what has always brought us pleasure - wheels and tires. When we started selling them, we began to install them not only on our own machines, but also on customers' machines. In addition, my brother and I studied at the university in this area, and during the first 5 years it was not easy for us to decide on our vision of the future."
+    },
+    {
+      "id": "4",
+      "year": "2012",
+      "imgUrl": "",
+      "title": "Rattad24 formation",
+      "description": "But gradually we formed our own brand - rattad24. In the beginning, we dealt with tires and established contacts with suppliers. Then we also began to deal with car maintenance, wheel selection, tuning and other things. "
+    },
+    {
+      "id": "5",
+      "year": "2023",
+      "imgUrl": "",
+      "title": "These days",
+      "description": "Today, 15 years later, we can say that we know almost everything about tires and wheels. We are constantly learning and following new trends in this area, we go to exhibitions in Europe, we import and export tires and wheels from all over the world. Our clientele is distributed throughout the Baltics and Scandinavia, as well as among residents of Spain, Germany and other Western European countries."
+    }
+  ]
+}
