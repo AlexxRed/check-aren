@@ -27,7 +27,6 @@
     "react-redux": "^8.0.5",
     "rfs": "^10.0.0",
     "sass": "^1.59.3",
-    "sharp": "^0.32.0",
     "sweetalert2": "^11.7.3",
     "swiper": "^9.1.1",
     "typescript": "5.0.2"

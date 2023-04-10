@@ -7,12 +7,12 @@
         },
         {
             "text": "Tires",
-            "href": "#tires",
-            "type": "anchor"
+            "href": "/catalog",
+            "type": "link"
         },
         {
             "text": "Discs",
-            "href": "/discs",
+            "href": "/catalog",
             "type": "link"
         },
         {

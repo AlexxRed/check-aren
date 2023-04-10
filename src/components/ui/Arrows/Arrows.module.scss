@@ -3,9 +3,9 @@
 
 .box{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: rem(142);
+    min-width: rem(142);
     max-height: rem(56);
 }
 

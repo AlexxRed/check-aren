@@ -1,18 +1,18 @@
 import { useEffect } from 'react';
 import type { GetStaticPropsContext, NextPage } from 'next'
 import Head from 'next/head'
-import DeliveryAndReturn from '@/components/screens/delivery/Delivery/DeliveryAndReturn';
+import Catalog from '@/components/screens/catalog/Catalog/Catalog'
 
 
-const Delivery: NextPage = () => {
+const Discs: NextPage = () => {
     return (
         <div className="next-page">
             <Head>
-            <title>Delivery and return</title>
+            <title>Catalog</title>
             </Head>
-        <DeliveryAndReturn/>
+        <Catalog/>
         </div>
     )
 }
     
-export default Delivery;
+export default Discs;

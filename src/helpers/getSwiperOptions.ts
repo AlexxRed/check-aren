@@ -12,7 +12,7 @@ const getSwiperOptions = () => {
             prevEl: '.prevSlide',
         },
         breakpoints: {
-            420: {
+            320: {
                 slidesPerView: 1,
                 spaceBetween: 24
             },

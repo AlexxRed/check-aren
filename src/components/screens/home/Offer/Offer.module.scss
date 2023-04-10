@@ -191,13 +191,9 @@
 }
 
 .slide {
-    width: 285px;
+    max-width: 285px;
 
-    @include mq($desktop) {
-        max-width: 285px;
-    }
-
-    @include mq($tablet) {
-        max-width: 369px;
-    }
+    // @include mq($tablet) {
+    //     max-width: 369px;
+    // }
 }

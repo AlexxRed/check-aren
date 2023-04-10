@@ -1,4 +1,5 @@
 import { FC} from 'react'
+import Link from 'next/link'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import getSwiperOptions from '@/helpers/getSwiperOptions'
@@ -54,8 +55,10 @@ const Relevant: FC = () => {
                         </Swiper>
                     </ul>
                 </div>
-
-                <Button type="button" text={'View all discs'}  className="theme" customClass={styles.view} handleClick={handleClick}/>
+                
+                <Link href={'/catalog'}>
+                    <Button type="button" text={'View all discs'}  className="theme" customClass={styles.view} handleClick={handleClick}/>
+                </Link>
 
             </div>          
         </section>

@@ -1,4 +1,4 @@
-import { FC, useEffect, useRef } from 'react'
+import { FC, useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 
 import heroData from '@/data/heroHome.json'
@@ -10,6 +10,7 @@ import ProductCardItem from './ProductCardItem'
 import card from '/public/img/pages/home/hero-card.png'
 import styles from './Hero.module.scss'
 import { Russo_One } from 'next/font/google'
+import Timer from '@/helpers/timer'
 
 
 const russo = Russo_One({
@@ -19,6 +20,12 @@ const russo = Russo_One({
 
 const Hero: FC = () => {
     const {section, description, button}: IHeroContent = heroData;
+
+    const [startTimer, setStartTimer] = useState(false);
+
+    const handleClick = () => {
+        setStartTimer(true)
+    }
 
     return (
         <section className={styles.section}>
@@ -36,10 +43,16 @@ const Hero: FC = () => {
                                     </span>
                                 </h1>
                                 <p className={styles.description}>{description}</p>
-                                <Button type="button" 
+                                {!startTimer  && <Button 
+                                        type="button" 
                                         text={button.text} 
                                         className="theme" 
-                                        customClass={styles.button} />
+                                        customClass={styles.button}
+                                        handleClick={handleClick}
+                                        />}
+                                {startTimer  && 
+                                <div className={styles.button}><Timer/></div>}
+
                             </div>
                             <div className={styles.card_wrapper}>
                                 <Image src={card} alt='card' width={401} height={378} className={styles.card}/>

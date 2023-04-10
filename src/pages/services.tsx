@@ -17,7 +17,7 @@ const Services: NextPage = () => {
         <Hero/>
         <Why/>
         <SignForm/>
-        {/* <Reviews/> */}
+        <Reviews/>
         <Faq/>
       </div>
     )

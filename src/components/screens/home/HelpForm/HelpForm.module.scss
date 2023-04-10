@@ -2,10 +2,11 @@
 @import '@/styles/resources';
 
 .section {
+    margin-top: rem(100);
     color: $white;
     background: var(--background-color-gray-black-theme);
     padding-bottom: 0px;
-    margin-bottom: 100px;
+    margin-bottom: rem(100);
 
     // @include mq($tablet) {
     //     padding: 40px 0;
