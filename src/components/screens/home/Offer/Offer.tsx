@@ -12,9 +12,10 @@ import IProductItem from '@/shared/interfaces/Product/IProductItem'
 
 import ProductCardItem from '@/components/ui/ProductCard/ProductCardItem'
 import Button from '@/components/ui/Button/Button'
+import Arrows from '@/components/ui/Arrows/Arrows'
+
 import styles from './Offer.module.scss'
 import { Russo_One } from 'next/font/google'
-import Arrows from '@/components/ui/Arrows/Arrows'
 
 const russo = Russo_One({
     subsets: ['latin'],

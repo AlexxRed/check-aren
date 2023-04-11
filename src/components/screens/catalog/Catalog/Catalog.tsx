@@ -13,8 +13,9 @@ import useWindowSize from '@/hooks/useWindowSize'
 
 import styles from './Catalog.module.scss'
 import { Russo_One } from 'next/font/google'
-import Navigation from '../Navigation/Navigation';
+import Navigation from '../Navigation/Navigation'
 import Timer from '@/helpers/timer'
+import Filter from '../Filter/Filter'
 
 
 
@@ -80,10 +81,10 @@ const Catalog: FC = () => {
                 </div>
                 
                 <div className={styles.wrapper}>
-                    <div className={styles.filter}>
+                    {/* <div className={styles.filter}>
 
-                    </div>
-
+                    </div> */}
+                    <Filter/>
                     <div className={styles.cards}>
                         <ul className={styles.list}>
                             {productList.map(({title, price, image, href}, idx)=>(

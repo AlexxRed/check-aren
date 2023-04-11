@@ -139,5 +139,9 @@
 }
 
 .image {
-    color: $black-them-gray;
+    fill: $black-them-gray;
+
+    &:hover {
+        fill: $accent;
+    }
 }

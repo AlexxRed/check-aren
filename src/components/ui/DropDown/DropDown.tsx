@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react'
 
-import { IoIosArrowUp } from "@react-icons/all-files/io/IoIosArrowUp";
-
+import { IoIosArrowUp } from "@react-icons/all-files/io/IoIosArrowUp"
 
 import style from './DropDown.module.scss'
 

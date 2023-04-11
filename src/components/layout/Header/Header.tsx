@@ -1,13 +1,13 @@
-import { FC, RefObject, useEffect, useState } from 'react';
-import Link from 'next/link';
+import { FC, RefObject, useEffect, useState } from 'react'
+import Link from 'next/link'
 
-import Logo from '@/components/ui/Logo/Logo';
-import Menu from '@/components/ui/Menu/Menu';
+import Logo from '@/components/ui/Logo/Logo'
+import Menu from '@/components/ui/Menu/Menu'
 import Language from '@/components//ui/Language/Language'
-import MenuIcons from '@/components/ui/MenuIcons/MenuIcons';
+import MenuIcons from '@/components/ui/MenuIcons/MenuIcons'
 
 // import anchorClick from '@helpers/anchorClick';
-import styles from './Header.module.scss';
+import styles from './Header.module.scss'
 
 type Props = {
     isSticky: boolean,
@@ -32,4 +32,4 @@ const Header: FC<Props> = ({isSticky, headerRef}) => {
     );
 }
 
-export default Header;
+export default Header

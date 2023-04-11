@@ -47,7 +47,13 @@ export default function Footer() {
               </nav>
             </div>
           </div>
-          <div className={style.map}></div>
+          <div className={style.map}>
+            <iframe
+              width='100%'
+              height='183'
+              src='https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed'
+            ></iframe>
+          </div>
         </div>
         <div className={style.down}>
           <div>Privacy Policy</div>

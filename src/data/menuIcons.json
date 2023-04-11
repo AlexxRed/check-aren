@@ -3,22 +3,22 @@
     [
         {
             "text": "basket",
-            "url": "/favicons/main/ShoppingCart.svg",
+            "url": "/favicons/main/shopping-cart.svg",
             "alt": "basket"
         },
         {
             "text": "arrows",
-            "url": "/favicons/main/GitDiff.svg", 
+            "url": "/favicons/main/git-diff.svg", 
             "alt": "arrows"
         },
         {
             "text": "user",
-            "url": "/favicons/main/User.svg",
+            "url": "/favicons/main/user.svg",
             "alt": "user"
         },
         {
             "text": "menu",
-            "url": "/favicons/main/List.svg",
+            "url": "/favicons/main/list.svg",
             "alt": "menu"
         }
     ]

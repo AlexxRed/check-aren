@@ -33,6 +33,22 @@
             padding: 16px 40px;
             color: #ffffff;
             align-items: start;
+            &:hover {
+              background: linear-gradient(
+                  0deg,
+                  rgba(255, 255, 255, 0.2),
+                  rgba(255, 255, 255, 0.2)
+                ),
+                #5cb94c;
+            }
+            &:active {
+              background: linear-gradient(
+                  0deg,
+                  rgba(0, 0, 0, 0.2),
+                  rgba(0, 0, 0, 0.2)
+                ),
+                #5cb94c;
+            }
           }
         }
       }
@@ -125,7 +141,6 @@
         }
         & .relations {
           grid-template-columns: 1fr 1fr;
-          align-items: center;
           justify-items: center;
           & .contact {
             & .nav {

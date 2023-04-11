@@ -17,8 +17,8 @@
         },
         {
             "text": "Reviews",
-            "href": "#reviews",
-            "type": "anchor"
+            "href": "/#reviews",
+            "type": "link"
         },
         {
             "text": "Our services",
