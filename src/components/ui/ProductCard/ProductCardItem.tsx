@@ -33,7 +33,7 @@ const ProductCardItem: FC<IProductItem> = ({image, title, price}) => {
                             <Button type="button" text={"Add to cart"}  className="theme" customClass={styles.add} />
                         </div>
                         <div className={styles.flag}>
-                            <BsBookmark className={styles.icon}/>
+                            <BsBookmark className={styles.icon} width={24} height={24}/>
                         </div>
                     </div>
                 </div>

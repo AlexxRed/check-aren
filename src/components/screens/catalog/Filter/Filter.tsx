@@ -2,7 +2,10 @@ import { FC, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { IoIosArrowUp } from '@react-icons/all-files/io/IoIosArrowUp'
 import { IoIosArrowDown } from '@react-icons/all-files/io/IoIosArrowDown'
+import RangeSlider from 'react-range-slider-input'
+import 'react-range-slider-input/dist/style.css'
 
+RangeSlider
 
 import data from '@/data/filters.json'
 
@@ -86,6 +89,7 @@ const Filter: FC = () => {
                         )}
                     </div>
                 ))}
+                {/* <RangeSlider id={1000} className={styles.price} step={1} defaultValue={[100,900]}  min={10} max={1000}/> */}
                 </form>
         </div>
     )
