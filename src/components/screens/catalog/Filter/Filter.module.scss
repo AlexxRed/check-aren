@@ -60,9 +60,9 @@
 
         border: solid 1.5px $accent;
         border-radius: 10px;
-      }
+    }
     
-      &::after {
+    &::after {
         content: "";
         position: absolute;
         top: 50%;
@@ -73,11 +73,11 @@
         background-color: #ccc;
         border-radius: 50%;
         opacity: 0;
-      }
+    }
     
-      input[type="checkbox"]:checked + &::after {
+    input[type="checkbox"]:checked + &::after {
         opacity: 1;
-      }
+    }
 }
 
 .input {

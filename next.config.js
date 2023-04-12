@@ -7,25 +7,13 @@ const withPWA = require('next-pwa')({
   skipWaiting: true
 });
 
+
 module.exports = withPWA({
   reactStrictMode: true,
   swcMinify: true,
-  images: {
-    dangerouslyAllowSVG: true,
-    contentDispositionType: 'attachment',
-    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-  },
   i18n: {
     locales: ['en-US', 'fi-FI'],
-    defaultLocale: 'fi-FI',
-  },
-  module: {
-    rules: [
-      {
-        test: /\.svg$/,
-        use: ['@svgr/webpack'],
-      },
-    ],
+    defaultLocale: 'en-US',
   },
   webpack: (config, { buildId, dev, isServer, defaultLoaders }) => {
     config.resolve.alias = {
@@ -36,10 +24,6 @@ module.exports = withPWA({
       '@mixins': path.resolve(__dirname, 'src/styles/resources/mixins'),
       '@rfs': path.resolve(__dirname, 'node_modules/rfs/scss')
     };
-    config.module.rules.push({
-      test: /\.svg$/,
-      use: ["@svgr/webpack"]
-    });
 
     return config;
   }

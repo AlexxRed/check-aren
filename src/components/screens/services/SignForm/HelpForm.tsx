@@ -1,13 +1,13 @@
-import { FC, useState, useRef, FormEvent, ChangeEvent } from 'react';
-import Image from 'next/image';
+import { FC, useState, useRef, FormEvent, ChangeEvent } from 'react'
+import Image from 'next/image'
 
-import helpFormData from '@/data/signForm.json';
-import IConsultation from '@/shared/interfaces/HelpForm/IHelpForm';
+import helpFormData from '@/data/signForm.json'
+import IConsultation from '@/shared/interfaces/HelpForm/IHelpForm'
 
-import Button from '@/components/ui/Button/Button';
+import Button from '@/components/ui/Button/Button'
 
-import styles from './HelpForm.module.scss';
-import { Russo_One } from 'next/font/google';
+import styles from './HelpForm.module.scss'
+import { Russo_One } from 'next/font/google'
 
 const russo = Russo_One({
     subsets: ['latin'],
@@ -16,11 +16,11 @@ const russo = Russo_One({
 
 
 const SignForm: FC = () => {
-    const {section, description, button, image}: IConsultation = helpFormData;
-    const {url, alt} = image;
+    const {section, description, button, image}: IConsultation = helpFormData
+    const {url, alt} = image
 
-    const nameInputRef = useRef<HTMLInputElement>(null);
-    const phoneInputRef = useRef<HTMLInputElement>(null);
+    const nameInputRef = useRef<HTMLInputElement>(null)
+    const phoneInputRef = useRef<HTMLInputElement>(null)
 
     const [fields, setFields] = useState<any| {}>({
         name: {text: 'Name', target: nameInputRef},
@@ -30,7 +30,7 @@ const SignForm: FC = () => {
     const [isDisabled, setIsDisabled] = useState<boolean>(true);
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-        const target = (e.target as HTMLInputElement);
+        const target = (e.target as HTMLInputElement)
         
         const {name, value} = target;
         const text = target.dataset.text,
@@ -78,4 +78,4 @@ const SignForm: FC = () => {
     );
 }
 
-export default SignForm;
+export default SignForm

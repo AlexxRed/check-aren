@@ -78,7 +78,6 @@ const Filter: FC = () => {
                                     value={option.value}
                                     onChange={handleChange}
                                     className={styles.input}
-                                    // ref={register}
                                 />
                                 {option.label}
                                 </label>
@@ -87,7 +86,6 @@ const Filter: FC = () => {
                         )}
                     </div>
                 ))}
-                {/* <button type="submit">Apply filter</button> */}
                 </form>
         </div>
     )

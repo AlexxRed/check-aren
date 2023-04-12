@@ -2,13 +2,13 @@
     "theme": 
     [
         {
-            "text": "black",
-            "url": "/favicons/theme/moon mode=off.svg",
+            "text": "dark",
+            "url": "/favicons/theme/moon-off.svg",
             "alt": "sun"
         },
         {
-            "text": "white",
-            "url": "/favicons/theme/moon mode=on.svg",
+            "text": "light",
+            "url": "/favicons/theme/moon-on.svg",
             "alt": "moon"
         }
     ]
