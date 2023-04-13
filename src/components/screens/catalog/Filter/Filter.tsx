@@ -2,10 +2,6 @@ import { FC, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { IoIosArrowUp } from '@react-icons/all-files/io/IoIosArrowUp'
 import { IoIosArrowDown } from '@react-icons/all-files/io/IoIosArrowDown'
-import RangeSlider from 'react-range-slider-input'
-import 'react-range-slider-input/dist/style.css'
-
-RangeSlider
 
 import data from '@/data/filters.json'
 
