@@ -6,11 +6,6 @@
             "type": "anchor"
         },
         {
-            "text": "Tires",
-            "href": "/catalog",
-            "type": "link"
-        },
-        {
             "text": "Discs",
             "href": "/catalog",
             "type": "link"
@@ -29,6 +24,11 @@
             "text": "FAQ",
             "href": "#faq",
             "type": "anchor"
+        },
+        {
+            "text": "Delivery",
+            "href": "/delivery",
+            "type": "link"
         }
     ]
 }
