@@ -212,5 +212,10 @@
             "label": "OEM appearance",
             "value": "OEM_appearance" 
         }
+    ],    "Sort by price": [
+        { 
+            "label": "Price",
+            "value": 0
+        }
     ]
 }

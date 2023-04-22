@@ -1,3 +1,6 @@
+/* ---- Footer ---- */
+@import '@/styles/resources';
+
 .footer {
   background-color: #222222;
   padding: 100px 0;
@@ -26,6 +29,7 @@
         }
         & .button {
           & button {
+            cursor: pointer;
             background: #5cb94c;
             border-radius: 10px;
             font-weight: 500;
@@ -74,6 +78,11 @@
                 font-size: 16px;
                 color: #767676;
                 margin-bottom: 20px;
+
+                &:hover {
+                  @include transition();
+                  color: $accent;
+              }
               }
             }
           }
@@ -98,6 +107,10 @@
                 color: #767676;
                 &:not(:last-child) {
                   margin-bottom: 20px;
+                }
+                &:hover {
+                  @include transition();
+                  color: $accent;
                 }
               }
             }
@@ -171,3 +184,4 @@
     }
   }
 }
+

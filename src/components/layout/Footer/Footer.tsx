@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 import Logo from '../../ui/Logo/Logo'
@@ -15,7 +16,9 @@ export default function Footer() {
               Leave a request so that we call you and answer all your questions.
             </div>
             <div className={style.button}>
-              <button>Help with selection</button>
+            <Link href="#help">
+                <button>Help with selection</button>
+            </Link>
             </div>
           </div>
           <div className={style.relations}>
@@ -23,12 +26,36 @@ export default function Footer() {
               <h3>Navigation</h3>
               <nav className={style.nav}>
                 <ul className={style.list}>
-                  <li className={style.item}>About us</li>
-                  <li className={style.item}>Reviews</li>
-                  <li className={style.item}>Tires</li>
-                  <li className={style.item}>Our services</li>
-                  <li className={style.item}>Discs</li>
-                  <li className={style.item}>FAQ</li>
+                  <li className={style.item}>
+                    <Link href="#about-us">
+                      About us
+                    </Link>
+                  </li>
+                  <li className={style.item}>
+                    <Link href="#reviews">
+                      Reviews
+                    </Link>
+                  </li>
+                  <li className={style.item}>
+                    <Link href="/catalog">
+                      Tires
+                    </Link>
+                  </li>
+                  <li className={style.item}>
+                    <Link href="/services">
+                      Our services
+                    </Link>
+                  </li>
+                  <li className={style.item}>
+                    <Link href="/catalog">
+                      Discs
+                    </Link>
+                  </li>
+                  <li className={style.item}>
+                    <Link href="#faq">
+                      FAQ
+                    </Link>
+                  </li>
                 </ul>
               </nav>
             </div>
@@ -36,13 +63,41 @@ export default function Footer() {
               <h3>Contact</h3>
               <nav className={style.nav}>
                 <ul className={style.list}>
-                  <li className={style.item}>(504) 896-6913</li>
-                  <li className={style.item}>Facebook</li>
-                  <li className={style.item}>(830) 556-6651</li>
-                  <li className={style.item}>Tik Tok</li>
-                  <li className={style.item}>Instagram</li>
-                  <li className={style.item}>Telegram</li>
-                  <li className={style.item}>1arenkaat@gmail.com</li>
+                  <li className={style.item}>
+                    <Link href="tel:5048966913">
+                      (504) 896-6913
+                    </Link>
+                  </li>
+                  <li className={style.item}>
+                    <Link href="https://www.facebook.com/">
+                      Facebook
+                    </Link>
+                  </li>
+                  <li className={style.item}>
+                    <Link href="tel:8305566651">
+                      (830) 556-6651
+                    </Link>                    
+                  </li>
+                  <li className={style.item}>
+                    <Link href="https://www.tiktok.com/">
+                      Tik Tok
+                    </Link>
+                  </li>
+                  <li className={style.item}>
+                    <Link href="https://www.instagram.com/">
+                      Instagram
+                    </Link>
+                  </li>
+                  <li className={style.item}>
+                    <Link href="https://web.telegram.org/k/">
+                      Telegram
+                    </Link>
+                  </li>
+                  <li className={style.item}>
+                    <Link href="mailto:1arenkaat@gmail.com">
+                      1arenkaat@gmail.com
+                    </Link>
+                  </li>
                 </ul>
               </nav>
             </div>
@@ -57,7 +112,7 @@ export default function Footer() {
         </div>
         <div className={style.down}>
           <div>Privacy Policy</div>
-          <div>Developed by AlphaDigital</div>
+          <div>Developed by Alex</div>
         </div>
       </div>
     </footer>

@@ -2,11 +2,14 @@ import { FC, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { IoIosArrowUp } from '@react-icons/all-files/io/IoIosArrowUp'
 import { IoIosArrowDown } from '@react-icons/all-files/io/IoIosArrowDown'
+import Slider from 'rc-slider';
+import 'rc-slider/assets/index.css';
 
 import data from '@/data/filters.json'
 
 import styles from './Filter.module.scss'
 import { Russo_One } from 'next/font/google'
+
 
 const russo = Russo_One({
     subsets: ['latin'],
@@ -62,8 +65,6 @@ const Filter: FC = () => {
                                 color:  clickedKey === key ? 'white' : ''}}
                             >
                             {key}
-                            {/* {clickedKey !== key &&  <IoIosArrowDown size={32} className={styles.arrow}/>}
-                            {clickedKey === key &&  <IoIosArrowUp size={32} className={styles.arrow}/>} */}
                             {open &&  <IoIosArrowDown size={32} className={styles.arrow}/>}
                             {!open &&  <IoIosArrowUp size={32} className={styles.arrow}/>}
                         </div>
@@ -85,7 +86,6 @@ const Filter: FC = () => {
                         )}
                     </div>
                 ))}
-                {/* <RangeSlider id={1000} className={styles.price} step={1} defaultValue={[100,900]}  min={10} max={1000}/> */}
                 </form>
         </div>
     )
