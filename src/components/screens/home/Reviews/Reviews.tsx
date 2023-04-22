@@ -48,6 +48,7 @@ function Reviews() {
       <Swiper
         spaceBetween={50}
         slidesPerView={2}
+        loop={true}
         breakpoints={{
           934: {
             slidesPerView: 2,
