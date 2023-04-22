@@ -1,8 +1,14 @@
 import React, { useState } from 'react'
 
-import style from './About.module.scss'
+import data from '@/data/about.json'
 
-import data from '../../../../data/about.json'
+import style from './About.module.scss'
+import { Russo_One } from 'next/font/google'
+
+const russo = Russo_One({
+    subsets: ['latin'],
+    weight: '400'
+})
 
 export default function About() {
   const [visiable, setVisiable] = useState(true)
@@ -16,7 +22,11 @@ export default function About() {
       {visiable &&
           <div className={style.visiable}>
           <header className={style.header}>
-            <h2 className={style.title}>{data.section.title}</h2>
+            <h2 className={style.title}>
+              <span className={russo.className}>
+                {data.section.title}
+              </span>
+            </h2>
             <button className={style.button} onClick={handleClick}>Skip</button>
           </header>
             <>

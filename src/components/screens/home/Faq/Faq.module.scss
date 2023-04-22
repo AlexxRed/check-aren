@@ -26,6 +26,7 @@
       align-items: center;
       justify-content: center;
       & button {
+        cursor: pointer;
         font-style: italic;
         font-weight: 500;
         @include adaptiv-font(20, 18);

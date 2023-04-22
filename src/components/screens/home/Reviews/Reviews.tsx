@@ -7,7 +7,7 @@ import { IoIosArrowForward } from "@react-icons/all-files/io/IoIosArrowForward";
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 import SwiperCore from 'swiper'
 
-import data from '../../../../data/reviews.json'
+import data from '@/data/reviews.json'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -15,6 +15,12 @@ import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 import style from './Reviews.module.scss'
 import Stars from '@/components/ui/Stars/Stars'
+import { Russo_One } from 'next/font/google'
+
+const russo = Russo_One({
+    subsets: ['latin'],
+    weight: '400'
+})
 
 function Reviews() {
   let swiper = useSwiper()
@@ -23,7 +29,7 @@ function Reviews() {
   return (
     <section className={style.reviews} id='reviews'>
       <header className={style.header}>
-        <h2>Reviews</h2>
+        <h2 className={russo.className}>Reviews</h2>
         <div className={style.nav}>
           <button
             className={style.left}
