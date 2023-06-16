@@ -35,6 +35,7 @@ const HelpForm: FC = () => {
         const {name, value} = target;
         const text = target.dataset.text,
         smile = target.dataset.smile;
+        
 
         // setFields(prev => {
         //     return {...prev, [name]: {
